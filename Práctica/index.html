@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER ESBOZO</title>
+</head>
+<body>
+    <header>
+        Icono
+        <nav>Menu</nav>
+    </header>
+    <main>
+
+        Imagen principal
+        <div>
+            <h1>NOMBRE</h1>
+            <p>Descripción</p>
+        </div>
+        <div>
+            <h2>SKILLS</h2>
+            <div class="">
+                Habilidad 1
+                <div class=""></div>
+            </div>
+            <div class="">
+                Habilidad 2
+                <div class=""></div>
+            </div>
+            <div class="">
+                Habilidad 3
+                <div class=""></div>
+            </div>
+            <div class="">
+                Habilidad 4
+                <div class=""></div>
+            </div>
+        </div>
+        <div>
+            <h3>CONTACTO</h3>
+        </div>
+        <div>
+            <form class="" action="" method="post">
+                <fieldset>
+                    <label for="">Nombre</label>
+                    <input type="text"/>
+                    <label for="">Apellidos</label>
+                    <input type="text"/>
+                    <label for="">Teléfono</label>
+                    <input type="tel" id="teléfono" name="teléfono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                </fieldset>
+                <fieldset>
+                    <label for="">¿Cómo me conociste?</label> <!-- ### REQUERIDO ### -->
+                    <input type="radio" name="" id=""/>Opción 1
+                    <input type="radio" name="" id=""/>Opción 2
+                    <input type="radio" name="" id=""/>Opción 3
+                    <input type="radio" name="" id=""/>Opción 4
+                </fieldset>
+                <fieldset>
+                    <label for="">Indica tu tag de GitHub</label>
+                    <input type="" pattern="^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$" required>/>
+                <fieldset>
+                    <label for="bio">¡Comentario!</label> <!-- (MAX 180 CARACTERES) ### REQUERIDO ### -->
+                    <textarea required id="bio"></textarea> <!-- Este textarea puede tener el tamaño que queramos -->
+                </fieldset>
+            
+                <button>Enviar</button>
+                <input type="button" value="Guardar"/>
+            </form>
+        </div>     
+    </main>
+    <footer>
+        <nav>
+            <!-- Para esto se usa method="post" (nunga get) pero hay que comprobar si se puede usar dentro del nav o tiene que ser en los enlaces... -->
+            <a href="" target="_blank">LinkedIn</a>
+            <a href="" target="_blank">GitHub</a>
+            <a href="" target="_blank">Twitter</a>
+        </nav>
+    </footer>
+</body>
+</html>
