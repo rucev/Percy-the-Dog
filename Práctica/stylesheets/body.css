@@ -1,28 +1,69 @@
-img {
-    height: auto;
+.headline400 {
+    color: #B4863C;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 42px;
+    text-shadow: 2px 2px 6px #000;
+    margin: 5px 15px;
+    font-family: 'Papyrus', 'Trebuchet MS', Arial, sans-serif;
 }
 
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.headline300 {
+    color: #ce9f55;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+    text-shadow: 2px 2px 2px #000;
+    margin: 5px 15px;
+    font-family: 'Comic Sans MS', 'Trebuchet MS', Arial, sans-serif;
 }
+
 
 .headline200 {
     color: #B4863C;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
+    margin: 20px 15px;
+    font-family: 'Papyrus', 'Trebuchet MS', Arial, sans-serif;
 }
 
 .headline100 {
-    color: #3B3A3B;
-    font-size: 18px;
+    color: #565656;
+    font-size: 22px;
     font-weight: 400;
     line-height: 26px;
+    margin: 10px 15px;
+    font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
+}
+
+.text {
+    color: #343434fc;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    margin: 25px 10px;
+    font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
 }
 
 .main-banner{
-    background-color: #B4863C;
+    background: url("../images/banner.webp") top left/cover no-repeat;
+    height: 300px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 500px;
+    flex-direction: column;
 }
+
+.main-banner .main-banner--image{
+    height: auto;
+    width: 150px;
+}
+
+.presentation {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
