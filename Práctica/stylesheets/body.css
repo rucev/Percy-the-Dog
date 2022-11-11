@@ -19,39 +19,4 @@
     flex-direction: column;
 }
 
-.skills {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-}
 
-.skills .skills--details{
-    width: 100%;
-    display: flex;  
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.skills .skills--bar{
-    position: relative;
-    border: 2px solid #B4863C;
-    border-radius: 20px;
-}
-
-.skills .skills--bar-div{
-    position: relative;
-    width: 0;
-    height: 9px;
-    border-radius: 10px;
-    background-color: #B4863C;
-}
-
-#dance-bar{
-    animation: dance-fill 5s forwards;
-}
-@keyframes dance-fill{
-    100%{
-        width: 95%;
-    }
-}

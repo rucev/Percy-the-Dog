@@ -1,0 +1,68 @@
+.skills {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills .skills--details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skills .skill--area{
+    width: 50%
+}
+
+.skills .skills--bar{
+    position: relative;
+    border: 2px solid #B4863C;
+    border-radius: 20px;
+}
+
+.skills .skills--bar-div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #B4863C;
+}
+
+.skills .skill-bar-90{
+    animation: animation-skill-bar-90 5s forwards;
+}
+@keyframes animation-skill-bar-90{
+    100%{
+        width: 90%;
+    }
+}
+
+.skills .skill-bar-80{
+    animation: animation-skill-bar-80 5s forwards;
+}
+@keyframes animation-skill-bar-80{
+    100%{
+        width: 80%;
+    }
+}
+
+.skills .skill-bar-70{
+    animation: animation-skill-bar-70 5s forwards;
+}
+@keyframes animation-skill-bar-70{
+    100%{
+        width: 70%;
+    }
+}
+
+.skills .skill-bar-20{
+    animation: animation-skill-bar-20 5s forwards;
+}
+@keyframes animation-skill-bar-20{
+    100%{
+        width: 20%;
+    }
+}
+
