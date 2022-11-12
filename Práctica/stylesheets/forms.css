@@ -92,7 +92,7 @@ input[type='radio']:checked:after {
     clear: both;
 }
 
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
     .row-question, .row-answer, input[type=submit] {
         width: 100%;
         margin-top: 0;
