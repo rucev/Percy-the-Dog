@@ -74,15 +74,15 @@ input[type='radio']:checked:after {
     border: 2px solid #B4863C;
 }
 
-.col-25 {
-    float: left;
-    width: 25%;
+.contact .row-question {
+    flex-direction: column;
+    width: 90%;
     margin-top: 6px;
 }
 
-.col-75 {
-    float: left;
-    width: 75%;
+.contact .row-answer {
+    flex-direction: column;
+    width: 90%;
     margin-top: 6px;
 }
 
@@ -92,8 +92,8 @@ input[type='radio']:checked:after {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+@media screen and (min-width: 576px) {
+    .row-question, .row-answer, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
