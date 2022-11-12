@@ -48,3 +48,11 @@
     text-justify: inter-word;
     font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
 }
+
+.questions {
+    color: #B4863C;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
+}  
