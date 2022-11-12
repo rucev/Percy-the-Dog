@@ -74,60 +74,32 @@
         </div>
         <div class="contact">
             <div class="container">
-                <form method="post"></form>
-                <div class="row">
-                    <div class="col-25">
-                        <label class="questions" for="name">Nombre</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="name" name="name" placeholder="..." required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label class="questions" for="surname">Apellidos</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="surname" name="surname" placeholder="..." required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label class="questions" for="phone">Teléfono</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="tel" id="phone" name="phone" placeholder="número (sin espacios)"  pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label class="questions" for="meet">¿Cómo me conociste?</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="radio" name="" id=""/>Amigui de mis amiguis
-                        <input type="radio" name="" id=""/>Me oliste el culete por la calle
-                        <input type="radio" name="" id=""/>Aún no me conoces, pero quieres conocerme
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="github" class="questions">Usuario de GitHub</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="github" name="github" placeholder="@tu-usuario"  pattern="^@[[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$]">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="descr" class="questions">Háblame de ti</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="descr" name="descr" maxlength="180" placeholder="No te enrolles, máximo 180chars" style="height:200px"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="button" value="Enviar">
-                </div>
+                <form class="" action="" method="post">
+                    <fieldset>
+                        <label for="">Nombre</label>
+                        <input type="text" required/>
+                        <label for="">Apellidos</label>
+                        <input type="text" required/>
+                        <label for="">Teléfono</label>
+                        <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="">¿Cómo me conociste?</label>
+                        <input type="radio" name="" id=""/>Opción 1
+                        <input type="radio" name="" id=""/>Opción 2
+                        <input type="radio" name="" id=""/>Opción 3
+                        <input type="radio" name="" id=""/>Opción 4
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Indica tu tag de GitHub</label>
+                        <input type="" pattern="^(@+[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}|)$"/>
+                    <fieldset>
+                        <label for="bio">¡Comentario!</label> <!-- (MAX 180 CARACTERES) ### REQUERIDO ### -->
+                        <textarea required id="bio" required ></textarea> <!-- Este textarea puede tener el tamaño que queramos -->
+                    </fieldset>
+                
+                    <button>Enviar</button>
+                    <input type="button" value="Guardar"/>
                 </form>
             </div>
         </div>
