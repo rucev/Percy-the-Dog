@@ -1,0 +1,20 @@
+footer {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    background-color: #565656;
+    overflow: auto;
+}
+
+.footer--logo{
+    height: auto;
+    width: 50px;
+}
+
+.footer--logo:hover {
+    transform: scale(1.2)
+}
+
+
