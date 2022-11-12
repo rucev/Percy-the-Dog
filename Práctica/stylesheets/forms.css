@@ -4,17 +4,10 @@
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    padding: 40px;
 }
 
-input[type=text], textarea {
-    width: 80%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-input[type=tel] {
+input[type=text], input[type=tel], textarea {
     width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -31,6 +24,9 @@ input[type=submit] {
     background-color: #B4863C;
     color: #262626;
     font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26px;
     max-width: 50%;
     padding: 12px 20px;
     border: none;
@@ -43,10 +39,39 @@ input[type=submit]:hover {
     background-color: #856533;
 }
 
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #2626263f;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #B4863C;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #2626263f;
+}
+
 .container {
     border-radius: 5px;
-    background-color: #dddddd;
+    background-color: #fcfcfcf1;
     padding: 20px;
+    border: 2px solid #B4863C;
 }
 
 .col-25 {
@@ -61,17 +86,16 @@ input[type=submit]:hover {
     margin-top: 6px;
 }
 
-  /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
 }
+

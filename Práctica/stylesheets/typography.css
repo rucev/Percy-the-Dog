@@ -49,10 +49,24 @@
     font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
 }
 
+.small-text {
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
+}
+
 .questions {
     color: #B4863C;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 26px;
     font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
 }  
+
+input:placeholder-shown {
+    font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
+}
+
+textarea:placeholder-shown {
+    font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
+}

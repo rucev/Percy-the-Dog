@@ -69,38 +69,81 @@
                 </div>
             </div>
         </div>
-        <div>
-            <h1 class="headline200">¿Y tú quién eres?</h1>
-        </div>
         <div class="contact">
+            <div>
+                <h1 class="headline200">¿Y tú quién eres?</h1>
+            </div>
             <div class="container">
                 <form class="" action="" method="post">
                     <fieldset>
-                        <label for="">Nombre</label>
-                        <input type="text" required/>
-                        <label for="">Apellidos</label>
-                        <input type="text" required/>
-                        <label for="">Teléfono</label>
-                        <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required/>
+                        <div class="row">
+                            <div class="col-25">
+                                <label class="questions" for="name">Nombre</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="name" name="name" placeholder="..." required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label class="questions" for="surname">Apellidos</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="surname" name="surname" placeholder="..." required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label class="questions" for="phone">Teléfono</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"  placeholder="número sin espacios" required/>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset>
-                        <label for="">¿Cómo me conociste?</label>
-                        <input type="radio" name="" id=""/>Opción 1
-                        <input type="radio" name="" id=""/>Opción 2
-                        <input type="radio" name="" id=""/>Opción 3
-                        <input type="radio" name="" id=""/>Opción 4
+                        <div class="row">
+                            <div class="col-25">
+                                <label class="questions" for="meet">¿Cómo me conociste?</label>
+                            </div>
+                            <div class="col-75">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="meet" value="friend" required><label class="small-text"> Amigui de mis amiguis</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="meet" value="smell"><label class="small-text"> Me oliste el culete por la calle</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="meet" value="now"><label class="small-text"> Aún no me conoces, pero quieres conocerme</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset>
-                        <label for="">Indica tu tag de GitHub</label>
-                        <input type="" pattern="^(@+[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}|)$"/>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="github" class="questions">Usuario de GitHub</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="github" name="github" placeholder="@tu-usuario" pattern="^(@+[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}|)$"/>
+                            </div>
+                        </div>
                     <fieldset>
-                        <label for="bio">¡Comentario!</label> <!-- (MAX 180 CARACTERES) ### REQUERIDO ### -->
-                        <textarea required id="bio" required ></textarea> <!-- Este textarea puede tener el tamaño que queramos -->
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="descr" class="questions">Háblame de ti</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="descr" name="descr" maxlength="180" placeholder="No te enrolles, máximo 180chars" style="height:200px"></textarea>
+                            </div>
+                        </div>
                     </fieldset>
-                
-                    <button>Enviar</button>
-                    <input type="button" value="Guardar"/>
-                </form>
+                    <div class="row">
+                        <input type="submit" value="Enviar">
+                    </div>
+                    </form>
             </div>
         </div>
     </main>
