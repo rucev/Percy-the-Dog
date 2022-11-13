@@ -50,6 +50,10 @@ input[name='meet'] {
     border: 2px solid #B4863C;
 }
 
+.answer-li{
+    display: flex;
+}
+
 .contact .row-question {
     flex-direction: column;
     width: 90%;
