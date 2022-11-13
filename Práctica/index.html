@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="stylesheets/forms.css">
     <link rel="stylesheet" href="stylesheets/navbar.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/responsive.css">
 </head>
 <body>
     <header>
@@ -32,128 +33,132 @@
         <h2 class="headline300">el conocimiento es palitos</h2>
     </div>
     <main>
-        <div id="about" class="presentation">
-            <h1 class="headline200">¿Quién soy?</h1>
-            <p class="text">Soy un perrete de orígenes humildes. ¿Sabes eso de decirle a tu hermano que lo encontraron en un contenedor?
-                Conmigo es cierto, pero ahora tengo la mejor vida del mundo: duermo, paseo, juego y como un palito al día. Dicen que es
-                para los dientes... ¡yo creo algo tan rico no puede ser tan útil! Me gustan tanto que a veces lloro de felicidad al
-                comérmelo. Supongo que soy un poco sentimental. Me gustan las canciones tristes.
-            </p>
-        </div>
-        <div id="skills" class="skills">
-            <h1 class="headline200">Mis talentos perrunos</h1>
-            <div class="skill--area">
-                <h3 class="headline100">Bailotear</h3>
-                <div class="skills--bar">
-                    <div class="skills--bar-div skill-bar-90"></div>
-                </div>
+        <div class="about-me">
+            <div id="about" class="presentation">
+                <h1 class="headline200">¿Quién soy?</h1>
+                <p class="text">Soy un perrete de orígenes humildes. ¿Sabes eso de decirle a tu hermano que lo encontraron en un contenedor?
+                    Conmigo es cierto. Pero ahora tengo la mejor vida del mundo: duermo, paseo, juego y como un palito al día. Dicen que es
+                    para los dientes... ¡yo creo algo tan rico no puede ser tan útil! Me gustan tanto que a veces lloro de felicidad al
+                    comérmelo. Supongo que soy un poco sentimental. Me gustan las canciones tristes.
+                </p>
             </div>
-            <div class="skill--area">
-                <h3 class="headline100">Esconder juguetes</h3>
-                <div class="skills--bar">
-                    <div class="skills--bar-div skill-bar-80"></div>
-                </div>
-            </div>
-            <div class="skill--area">
-                <h3 class="headline100">Dormir en lugares inconvenientes</h3>
-                <div class="skills--bar">
-                    <div class="skills--bar-div skill-bar-70"></div>
-                </div>
-            </div>
-            <div class="skill--area">
-                <h3 class="headline100">Socializar con otros de mi especie</h3>
-                <div class="skills--bar">
-                    <div class="skills--bar-div skill-bar-20"></div>
-                </div>
-            </div>
-            <div class="skill--area">
-                <h3 class="headline100">Socializar con otras especies</h3>
-                <div class="skills--bar">
-                    <div class="skills--bar-div skill-bar-90"></div>
-                </div>
-            </div>
-            <div class="skill--area">
-                <h3 class="headline100">Oler a la nada, pensando en todo</h3>
-                <div class="skills--bar">
-                    <div class="skills--bar-div skill-bar-80"></div>
-                </div>
-            </div>
-        </div>
-        <div id="contact" class="contact">
-            <div>
-                <h1 class="headline200">¿Y tú quién eres?</h1>
-            </div>
-            <div class="container">
-                <form method="post">
-                    <fieldset>
-                        <div class="row">
-                            <div class="row-question">
-                                <label class="questions" for="name">Nombre</label>
-                            </div>
-                            <div class="row-answer">
-                                <input type="text" id="name" name="name" placeholder="..." required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="row-question">
-                                <label class="questions" for="surname">Apellidos</label>
-                            </div>
-                            <div class="row-answer">
-                                <input type="text" id="surname" name="surname" placeholder="..." required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="row-question">
-                                <label class="questions" for="phone">Teléfono</label>
-                            </div>
-                            <div class="row-answer">
-                                <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"  placeholder="número sin espacios" required/>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <div class="row">
-                            <div class="row-question">
-                                <label class="questions" for="meet">¿Cómo me conociste?</label>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <input type="radio" name="meet" value="friend" required><label class="small-text">Amigui de mis amiguis</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="meet" value="smell"><label class="small-text">Me oliste el culete por la calle</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="meet" value="now"><label class="small-text">No me conoces, pero quieres conocerme</label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <div class="row">
-                            <div class="row-question">
-                                <label for="github" class="questions">Usuario de GitHub</label>
-                            </div>
-                            <div class="row-answer">
-                                <input type="text" id="github" name="github" placeholder="@tu-usuario" pattern="^(@+[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}|)$"/>
-                            </div>
-                        </div>
-                    <fieldset>
-                        <div class="row">
-                            <div class="row-question">
-                                <label for="descr" class="questions">Háblame de ti</label>
-                            </div>
-                            <div class="row-answer">
-                                <textarea id="descr" name="descr" maxlength="180" placeholder="No te enrolles, máximo 180chars" style="height:200px"></textarea>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="row">
-                        <input type="submit" value="Enviar">
+            <div id="skills" class="skills">
+                <h1 class="headline200">Mis talentos perrunos</h1>
+                <div class="skill--area">
+                    <h3 class="headline100">Bailotear</h3>
+                    <div class="skills--bar">
+                        <div class="skills--bar-div skill-bar-90"></div>
                     </div>
-                    </form>
+                </div>
+                <div class="skill--area">
+                    <h3 class="headline100">Esconder juguetes</h3>
+                    <div class="skills--bar">
+                        <div class="skills--bar-div skill-bar-80"></div>
+                    </div>
+                </div>
+                <div class="skill--area">
+                    <h3 class="headline100">Dormir en lugares inconvenientes</h3>
+                    <div class="skills--bar">
+                        <div class="skills--bar-div skill-bar-70"></div>
+                    </div>
+                </div>
+                <div class="skill--area">
+                    <h3 class="headline100">Socializar con otros de mi especie</h3>
+                    <div class="skills--bar">
+                        <div class="skills--bar-div skill-bar-20"></div>
+                    </div>
+                </div>
+                <div class="skill--area">
+                    <h3 class="headline100">Socializar con otras especies</h3>
+                    <div class="skills--bar">
+                        <div class="skills--bar-div skill-bar-90"></div>
+                    </div>
+                </div>
+                <div class="skill--area">
+                    <h3 class="headline100">Oler a la nada, pensando en todo</h3>
+                    <div class="skills--bar">
+                        <div class="skills--bar-div skill-bar-80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-you">
+            <div id="contact" class="contact">
+                <div>
+                    <h1 class="headline200">¿Y tú quién eres?</h1>
+                </div>
+                <div class="container">
+                    <form method="post">
+                        <fieldset>
+                            <div class="row">
+                                <div class="row-question">
+                                    <label class="questions" for="name">Nombre</label>
+                                </div>
+                                <div class="row-answer">
+                                    <input type="text" id="name" name="name" placeholder="..." required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row-question">
+                                    <label class="questions" for="surname">Apellidos</label>
+                                </div>
+                                <div class="row-answer">
+                                    <input type="text" id="surname" name="surname" placeholder="..." required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row-question">
+                                    <label class="questions" for="phone">Teléfono</label>
+                                </div>
+                                <div class="row-answer">
+                                    <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"  placeholder="número sin espacios" required/>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="row">
+                                <div class="row-question">
+                                    <label class="questions" for="meet">¿Cómo me conociste?</label>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="meet" value="friend" required><label class="small-text">Amigui de mis amiguis</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="meet" value="smell"><label class="small-text">Me oliste el culete por la calle</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="meet" value="now"><label class="small-text">No me conoces, pero quieres conocerme</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="row">
+                                <div class="row-question">
+                                    <label for="github" class="questions">Usuario de GitHub</label>
+                                </div>
+                                <div class="row-answer">
+                                    <input type="text" id="github" name="github" placeholder="@tu-usuario" pattern="^(@+[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}|)$"/>
+                                </div>
+                            </div>
+                        <fieldset>
+                            <div class="row">
+                                <div class="row-question">
+                                    <label for="descr" class="questions">Háblame de ti</label>
+                                </div>
+                                <div class="row-answer">
+                                    <textarea id="descr" name="descr" maxlength="180" placeholder="No te enrolles, máximo 180 chars" style="height:200px"></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="row">
+                            <input type="submit" value="Enviar">
+                        </div>
+                        </form>
+                </div>
             </div>
         </div>
     </main>
