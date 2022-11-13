@@ -1,10 +1,8 @@
 .navbar {
-    box-sizing: border-box;
+    background: linear-gradient(#B4863C, #dab272);
     display: flex;
-    width: 100%;
     align-items: center;
-    background-color: #ce9f55;
-    overflow: auto;
+    justify-content: space-between;
 }
 
 .navbar a {
@@ -14,10 +12,12 @@
     text-decoration: none;
     font-size: 18px;
     font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
+    transition: all 0.5s;
 }
 
 .navbar a:hover {
-    background-color: #d7ad6a;
+    color: #565656;
+    font-style: italic;
 }
 
 .navbar .navbar--logo{
