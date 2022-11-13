@@ -6,11 +6,11 @@
 }
 
 .navbar a {
-    padding: 12px;
+    padding: 4px;
     font-weight: 600;
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 12px;
     font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
     transition: all 0.5s;
 }
@@ -23,4 +23,18 @@
 .navbar .navbar--logo{
     height: auto;
     width: 50px;
+}
+
+@media (min-width: 400px) {
+    .navbar a {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar a {
+        padding: 16px;
+        font-size: 19px;
+    }
 }
