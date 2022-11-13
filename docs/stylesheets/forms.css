@@ -39,23 +39,6 @@ input[type=submit]:hover {
     background-color: #856533;
 }
 
-input[type='radio']:after {
-    background-color: #d1d3d1;
-}
-
-input[type='radio']:checked:after {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #B4863C;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid #2626263f;
-}
 
 .container {
     border-radius: 5px;
