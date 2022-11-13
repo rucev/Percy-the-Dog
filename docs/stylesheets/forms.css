@@ -39,6 +39,9 @@ input[type=submit]:hover {
     background-color: #856533;
 }
 
+input[name='meet'] {
+    accent-color: #B4863C;
+}
 
 .container {
     border-radius: 5px;
