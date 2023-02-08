@@ -1,5 +1,7 @@
-# Práctica de HTML y CSS:
+# PERCY THE DOG:
 
-Diseño de un portafolio con barras animadas, un breve cuestionario y barras de navegación. Formato mobile first, también adaptado a pantallas de más de 768px.
+Website of a very cute dog!
 
-Visualización descargando la carpeta y abriendo "docs/index.html" en el navegador o a través de "https://rucev.github.io/Percy-the-Dog/"
+(using only CSS and HTML)
+
+https://rucev.github.io/Percy-the-Dog/
